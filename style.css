@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black;
+  width: 100%;
+  margin: 75px auto 0;
+  display: block;
+  text-align: center;
+  padding: 30px 0 0;
+}
+
+h3 {
+  color: black;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 5px;
+  font-weight: 200;
+  width: 100%;
+  background: #c5b2b2;
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* position: relative; */
+  min-height: 100vh;
+}
+
+#catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border: 1px dotted black;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.prod_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.418);
+          box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.418);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0 5px 10px;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100px;
+}
+
+.small_img {
+  height: 70px;
+}
+
+.small_img:first-child {
+  height: 150px;
+}
+
+.image:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.description {
+  height: 100%;
+  margin-left: 30px;
+}
+
+.description h4 {
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+.price {
+  color: black;
+  margin-top: 50px;
+}
+
+.price span {
+  font-size: 3em;
+}
+
+.show {
+  visibility: visible;
+  padding: 5px;
+}
+
+.sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background: #8f8f8f;
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #b1b1b1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-shadow: 0 0 12px 2px lightslategrey;
+          box-shadow: 0 0 12px 2px lightslategrey;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  font-size: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.total p {
+  font-weight: 500;
+}
+
+.buy {
+  color: #858585;
+  display: block;
+  padding: 3px 40px 9px;
+  border: 2px solid #888888;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+#popup {
+  position: fixed;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.82);
+  display: none;
+  height: 100vh;
+}
+
+.scale {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#buy_hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 800px;
+  font-size: 1.5em;
+}
+
+.buy_hidden__delete {
+  color: #838383;
+  margin-left: 25px;
+  font-size: .8em;
+}
+
+.buy_hidden__delete:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#yandexmap {
+  width: 100%;
+  height: 300px;
+  margin: 15px 0px;
+}
+
+.confirmHtml, .messageHtml {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 800px;
+  font-size: 1.5em;
+}
+
+.form {
+  width: 100%;
+}
+
+.buy_hidden__confirm {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+.orderDiv {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  max-width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-box-shadow: 0 0 12px 2px lightslategrey;
+          box-shadow: 0 0 12px 2px lightslategrey;
+  padding: 60px 60px 10px;
+  border-radius: 20px;
+}
+
+#close {
+  margin: 30px;
+  padding: 3px 40px 9px;
+  color: #888888;
+  border: 2px solid #888888;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  background: none;
+  font-size: 1.5em;
+}
+
+.orderDiv h4 {
+  margin-top: 15px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
